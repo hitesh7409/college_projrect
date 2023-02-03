@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE university [
+  <!ELEMENT university (header, nav, main, footer)>
+  <!ELEMENT header (h1)>
+  <!ELEMENT nav (ul)>
+  <!ELEMENT main (section+)>
+  <!ELEMENT footer (p)>
+  <!ELEMENT h1 (#PCDATA)>
+  <!ELEMENT p (#PCDATA)>
+  <!ELEMENT ul (li+)>
+  <!ELEMENT li (#PCDATA)>
+  <!ELEMENT section (h2, p | h2, ul)>
+  <!ELEMENT h2 (#PCDATA)>
+  <!ATTLIST section id ID #REQUIRED>
+]>
+<university>
+  <header>
+    <h1>University Name</h1>
+  </header>
+  <nav>
+    <ul>
+      <li>About</li>
+      <li>Courses</li>
+      <li>Faculty</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>University description...</p>
+    </section>
+    <section id="courses">
+      <h2>Courses</h2>
+      <ul>
+        <li>Course 1</li>
+        <li>Course 2</li>
+        <li>Course 3</li>
+      </ul>
+    </section>
+    <section id="faculty">
+      <h2>Faculty</h2>
+      <ul>
+        <li>Faculty Member 1</li>
+        <li>Faculty Member 2</li>
+        <li>Faculty Member 3</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Address: 123 Main Street, Anytown USA</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: university@email.com</p>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2023 University Name</p>
+  </footer>
+</university>
